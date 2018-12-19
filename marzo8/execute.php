@@ -60,7 +60,7 @@
 		}
 		if ($text=="orario")
 		{
-			$text="La data odierna è: ".date("H.i.s");
+			$text="L'ora attuale è: ".date("h.i.sa");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
