@@ -33,6 +33,7 @@
 		$date = isset($message['date']) ? $message['date'] : "";
 		//ed il testo del messaggio
 		$text = isset($message['text']) ? $message['text'] : "";
+		$age= isset($message['text']) ? $message['text'] : "";
         //eliminiamo gli spazi con trim e convertiamo in minuscolo con la funz strtolower
 		
 		$text = trim($text);
@@ -51,6 +52,11 @@
 			$text="La data odierna è: ".date("d.m.y");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
+		}
+		if($text=="anni")
+		{
+			$text="L'età è: ".age("text");
+			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
 		
 	
