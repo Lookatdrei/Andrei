@@ -58,7 +58,7 @@
 			$text="L'età è 2004";
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
-		if ($text=="data")
+		if ($text=="orario")
 		{
 			$text="La data odierna è: ".date("H.i.s");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
@@ -66,8 +66,8 @@
 		}
 		if ($text=="foto")
 		{
-			sendPhoto($chatId,"foto.png",false,"La Mia Foto",$api);
-			
+			sendFoto($chatId,"foto.png",false,"La Mia Foto",$api);
+		
 		}
 		
 	
