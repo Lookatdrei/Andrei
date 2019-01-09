@@ -74,6 +74,15 @@
 			sendFoto($chatId,"foto.png",false,"La Mia Foto",$api);
 		
 		}
+		if($text=="barz")
+		{
+			$barz[0]="Cosa fa Pisano alle 4 di notte?Cerca le 2004"
+			$barz[1]="Un taglialegna va in un negozio di abbigliamento e chiede alla commessa: “Vorrei un paio di jeans.” E la signorina domanda: “Che taglia?” “La legna!!!”"
+			$barz[2]="Un consiglio per i medici: non mangiate una mela al giorno!"
+			$barz[3]="Qual è il colmo per un idraulico? Non capire un tubo!!!!"
+			$i= srand(0,3);
+			$parameters = array('chat_id' => $chatId, "text" => $barz[$i]);
+		}
 		
 	
 		
