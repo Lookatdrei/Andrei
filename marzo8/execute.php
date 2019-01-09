@@ -73,7 +73,7 @@
 			
 			$num=rand(0,2);
 			
-			sendFoto($chatId,foto.png ,false, "La Mia Foto", $api);
+			sendFoto($chatId, $foto[$num] ,false, "La Mia Foto", $api);
 				}
 				
 		/*if($text=="barz");
