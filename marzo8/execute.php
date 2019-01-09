@@ -53,12 +53,12 @@
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
-		/*if($text=="anni"||$text=="/anni")
+		if($text=="anni"||$text=="/anni")
 		{
 			$text="L'età è 2004";
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
-		if($text=="orario||$text=="/orario")
+		if($text=="orario"||$text=="/orario")
 		{
 			$text="L'ora attuale è: ".date("h.i.sa");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
