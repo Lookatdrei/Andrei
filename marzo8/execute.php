@@ -47,36 +47,38 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente, rimando il testo che
 		//ho ricevuto e che si trova nella variabile $text
 		$parameters = array('chat_id' => $chatId, "text" => $text);
-		if($text=="data"||$text=="/data");
+		if($text=="data"||$text=="/data")
 		{
 			$text="La data odierna è: ".date("d.m.y");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
-		if($text=="anni"||$text=="/anni");
+		if($text=="anni"||$text=="/anni")
 		{
 			$text="L'età è 2004";
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
-		if($text=="orario||$text=="/orario");
+		if($text=="orario||$text=="/orario")
 		{
 			$text="L'ora attuale è: ".date("h.i.sa");
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
 		
-		if($text=="foto"||$text=="/foto");
+		if($text=="foto"||$text=="/foto")
 				{
 			$foto[0]="foto.png";
 			$foto[1]="foto1.png";
 			$foto[2]="foto2.png";
+			
 			$num=rand(0,2);
-			sendFoto($chatId,$foto[$num],false,"La Mia Foto",$api);
+			
+			sendFoto($chatId,foto.png ,false, "La Mia Foto", $api);
 				}
 				
 		if($text=="barz");
 		{
-			$barz[0]="Cosa fa Pisano alle 4 di notte?Cerca le 2004";
+			$barz[0]="Cosa fa Pisano alle 4 di notte?Cerca le 2004!";
 			$barz[1]="Un taglialegna va in un negozio di abbigliamento e chiede alla commessa: “Vorrei un paio di jeans.” E la signorina domanda: “Che taglia?” La legna!";
 			$barz[2]="Un consiglio per i medici: non mangiate una mela al giorno!";
 			$barz[3]="Qual è il colmo per un idraulico? Non capire un tubo!";
