@@ -87,7 +87,7 @@
 		}
 		if($text=="audio")
 		{
-			sendAudio($chatId,"audio.mp3",false, "Il mio Audio",$api);
+			sendAudio($chatId,"mv-gfriend-sunrise.mp3",false, "Il mio Audio",$api);
 		}
 		
 	
