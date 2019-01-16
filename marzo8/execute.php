@@ -89,6 +89,10 @@
 		{
 			sendAudio($chatId,"sunrise.mp3",false,"Gfriend-Sunrise",$api);
 		}
+		if($text=="pdf")
+		{
+			sendDocument($chatId,"testo.pdf",false,"Il tuo file pdf",$api);
+		}
 		
 	
 		
