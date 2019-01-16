@@ -93,10 +93,6 @@
 		{
 			sendDocument($chatId,"testo.pdf",false,"Il tuo file pdf",$api);
 		}
-		if($text=="txt")
-		{
-			sendDocument($chatId,"testo.txt",false,"Il tuo file txt",$api);
-		}
 		
 	
 		
