@@ -85,9 +85,9 @@
 			$i=rand(0,3);
 			$parameters = array('chat_id' => $chatId, "text" => $barz[$i]);
 		}
-		if($text=="audio")
+		if($text=="Sunrise")
 		{
-			sendAudio($chatId,"mv-gfriend-sunrise.mp3",false, "Il mio Audio",$api);
+			sendAudio($chatId,"mv-gfriend-sunrise.mp3",false, "Gfriend-Sunrise",$api);
 		}
 		
 	
